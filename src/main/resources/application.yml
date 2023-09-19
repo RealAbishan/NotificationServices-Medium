@@ -1,0 +1,13 @@
+server:
+  port: ${SERVER_PORT:9090}
+  servlet:
+    context-path: /api/ntf-svc
+
+
+env:
+
+  twilio:
+    sms:
+      authToken: ${AUTH_TOKEN:e97106adf864f6ff23dc03b9bb01297a}
+      accountSid: ${ACCOUNT_SID:AC6c6bb2172c3ab13f0c705033d3d1faaf}
+      fromNo: ${FROM_NUMBER:+12058721552}
