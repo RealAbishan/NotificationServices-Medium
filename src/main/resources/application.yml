@@ -3,11 +3,23 @@ server:
   servlet:
     context-path: /api/ntf-svc
 
+spring:
+  mail:
+    host: smtp.gmail.com
+    username: youremail@gmail.com
+    password: password
+    port: 587
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: true
+          auth: true
 
 env:
-
   twilio:
     sms:
-      authToken: ${AUTH_TOKEN:e97106adf864f6ff23dc03b9bb01297a}
-      accountSid: ${ACCOUNT_SID:AC6c6bb2172c3ab13f0c705033d3d1faaf}
-      fromNo: ${FROM_NUMBER:+12058721552}
+      authToken: ${AUTH_TOKEN:e9***********************}
+      accountSid: ${ACCOUNT_SID:AC6*************************}
+      fromNo: ${FROM_NUMBER:+120***********}
+

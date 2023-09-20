@@ -14,6 +14,9 @@ public class ENVConfig {
     @Value("${env.twilio.sms.fromNo}")
     private String twilioSmsFromNo;
 
+    @Value("${spring.mail.username}")
+    private String emailFrom;
+
     public String getAuthToken() {
         return authToken;
     }
@@ -24,5 +27,9 @@ public class ENVConfig {
 
     public String getTwilioSmsFromNo() {
         return twilioSmsFromNo;
+    }
+
+    public String getEmailFrom() {
+        return emailFrom;
     }
 }

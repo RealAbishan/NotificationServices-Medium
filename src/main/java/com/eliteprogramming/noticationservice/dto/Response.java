@@ -18,6 +18,12 @@ public class Response {
         this.data = data;
     }
 
+    public Response(ResponseMessage responseMessage) {
+    }
+
+    public Response(String message, String data, ResponseMessage responseMessage) {
+    }
+
 
     public String getMessage() {
         return message;
